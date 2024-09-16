@@ -15,7 +15,14 @@ public class GraderV2_9_4 {
     }
 
     private static int getLowestScore(int gr1, int gr2, int gr3) {
-        return 0;
+        int lowest = gr1;
+        if ( gr2 < lowest ){
+            lowest = gr2;
+        }
+        if ( gr3 < lowest ){
+            lowest = gr3;
+        }
+        return lowest;
     }
 
     private static void showAnswer(int gr1, int gr2, int gr3, double aver, int lowest) {
