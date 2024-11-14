@@ -1,0 +1,2 @@
+public class prep1 {
+}
